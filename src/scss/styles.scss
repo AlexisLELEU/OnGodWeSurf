@@ -5,10 +5,11 @@
 /* FUNCTION PART */
 @import "functions/pxtorem";
 /* END FUNCTION*/
+/* MIXINS PART */
+@import "mixins/absolute";
+@import "mixins/resetbtn";
+/* END MIXINS PART*/
 /* COMPONENT PART */
 @import "components/home";
 @import "components/header";
 /* END COMPONENT PART*/
-/* MIXINS PART */
-@import "mixins/absolute";
-/* END MIXINS PART*/

@@ -32,12 +32,104 @@ time, mark, audio, video {
 /* END BASE PART */
 /* FUNCTION PART */
 /* END FUNCTION*/
+/* MIXINS PART */
+/* END MIXINS PART*/
 /* COMPONENT PART */
+.background {
+  position: absolute;
+  top: 0;
+  left: -50%;
+  height: 100%; }
+  .background:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(184, 208, 219, 0.4); }
+
+.background__image {
+  width: 100%;
+  height: 100%; }
+
+.homepage__title {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-family: 'Lato', "Helvetica Neue", sans-serif;
+  font-size: 1.875em;
+  padding: 0.3125em 1.25em;
+  color: #FFF; }
+
+.cta-inup {
+  position: absolute;
+  top: 1.25em;
+  right: 1.25em; }
+  .cta-inup .btn {
+    display: flex;
+    flex-flow: column wrap; }
+
+.choice {
+  position: absolute;
+  bottom: 3.125em;
+  width: 100%; }
+  .choice .choice__title {
+    font-size: 1.875em;
+    color: #FFF;
+    text-align: center; }
+  .choice .btn {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 0.9375em; }
+    .choice .btn .btn__btn {
+      padding: 0.5em 3.125em; }
+
+.btn__btn {
+  color: black;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+  margin-bottom: 0.9375em;
+  padding: 0.3125em 0.9375em;
+  background-color: #d3d3d3;
+  color: #FFF;
+  border-radius: 0.625em;
+  width: auto; }
+  .btn__btn:not(input) {
+    user-select: none; }
+  .btn__btn:focus {
+    outline: none; }
+  .btn__btn:hover {
+    text-decoration: none;
+    color: black; }
+  .btn__btn::-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+
 .blue-light {
   background: #afcad6; }
 
 .header {
-  padding: 3.125em 1.25em;
+  position: relative;
+  z-index: 1;
+  padding-top: 3.125em;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +147,5 @@ time, mark, audio, video {
   margin-bottom: 1.875em; }
 
 /* END COMPONENT PART*/
-/* MIXINS PART */
-/* END MIXINS PART*/
 
 /*# sourceMappingURL=styles.css.map */
