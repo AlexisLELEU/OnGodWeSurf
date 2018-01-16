@@ -1,0 +1,58 @@
+.connect-main{
+  font-family: 'lato';
+}
+
+
+
+.title__title{
+  font-family: 'Lato';
+  text-align: center;
+  color: $white;
+  font-size: rem(14);
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: rem(15) rem(30);
+}
+
+.form__label{
+  color: $white;
+  font-size: rem(14);
+  margin-bottom: rem(5);
+}
+
+.form__input{
+  background: $white;
+  border-radius: rem(4);
+  border: none;
+  padding: rem(15) rem(10);
+  margin-bottom: rem(20);
+}
+
+.form__validate{
+  @include button;
+  margin: 0 auto;
+}
+
+.forget{
+  padding: rem(0) rem(30);
+}
+
+.forget__link{
+  color: $white;
+  font-size: rem(11);
+}
+
+.create__link{
+  text-align: center;
+  color: $white;
+  font-size: rem(14);
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding: rem(30);
+}

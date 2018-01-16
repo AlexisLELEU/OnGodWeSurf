@@ -5,9 +5,12 @@
 /* FUNCTION PART */
 @import "functions/pxtorem";
 /* END FUNCTION*/
+@import "mixins/button";
 /* COMPONENT PART */
 @import "components/home";
 @import "components/header";
+@import "components/form";
+@import "components/forget";
 /* END COMPONENT PART*/
 /* MIXINS PART */
 @import "mixins/absolute";
