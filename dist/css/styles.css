@@ -30,46 +30,10 @@ time, mark, audio, video {
 /* COLOR VARIABLE */
 /* END COLOR VARIABLE */
 /* END BASE PART */
-/* COMPONENT PART */
-body {
-  background: url("../img/home.jpg");
-  color: #FFF; }
-  body a {
-    color: #FFF;
-    text-decoration: none; }
-  body li {
-    list-style: none; }
-
-header {
-  width: 100%;
-  height: 100px; }
-  header nav {
-    display: flex;
-    justify-content: center; }
-    header nav h1 {
-      position: absolute;
-      top: 5%; }
-    header nav .connection {
-      position: absolute;
-      right: 8%;
-      top: 3%; }
-      header nav .connection li {
-        width: 120%;
-        background: #DEDEDE;
-        padding: 7%;
-        border-radius: 14%; }
-        header nav .connection li:nth-child(2) {
-          margin-top: 8%; }
-
-.home-main {
-  width: 100%; }
-  .home-main .slogan {
-    display: flex;
-    justify-content: center; }
-
-/* END COMPONENT PART*/
 /* FUNCTION PART */
 /* END FUNCTION*/
+/* COMPONENT PART */
+/* END COMPONENT PART*/
 /* MIXINS PART */
 /* END MIXINS PART*/
 h1 {
