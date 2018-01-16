@@ -1,0 +1,22 @@
+body{
+  background: #afcad6;
+}
+
+header{
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  img{
+    border: 2px solid $white;
+    width: 50px;
+    height: 37px;
+    margin-bottom: 30px;
+  }
+  h1{
+    font-family: 'Lato';
+    font-size: rem(36);
+    color: $white;
+  }
+}

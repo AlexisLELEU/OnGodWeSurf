@@ -7,10 +7,8 @@
 /* END FUNCTION*/
 /* COMPONENT PART */
 @import "components/home";
+@import "components/header";
 /* END COMPONENT PART*/
 /* MIXINS PART */
 @import "mixins/absolute";
 /* END MIXINS PART*/
-h1 {
-  color: $black;
-}
