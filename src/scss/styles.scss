@@ -8,3 +8,9 @@
 /* FUNCTION PART */
 @import "functions/pxtorem";
 /* END FUNCTION*/
+/* MIXINS PART */
+@import "mixins/absolute";
+/* END MIXINS PART*/
+h1 {
+  color: $black;
+}
