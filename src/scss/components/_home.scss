@@ -1,0 +1,66 @@
+.background {
+  position: absolute;
+  top: 0;
+  left: -50%;
+  height: 100%;
+  &:after {
+    content: '';
+    @include absolute;
+    background-color: rgba(184, 208, 219, 0.4);
+  }
+}
+
+.background__image {
+  width: 100%;
+  height: 100%;
+}
+
+.homepage__title {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-family: 'Lato', "Helvetica Neue", sans-serif;
+  font-size: rem(30);
+  padding: rem(5) rem(20);
+  color: $white;
+}
+
+.cta-inup {
+  position: absolute;
+  top: rem(20);
+  right: rem(20);
+  .btn {
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
+
+.choice {
+  position: absolute;
+  bottom: rem(50);
+  width: 100%;
+  .choice__title {
+    font-size: rem(30);
+    color: $white;
+    text-align: center;
+  }
+  .btn {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: rem(15);
+    .btn__btn {
+      padding: rem(8) rem(50);
+    }
+  }
+}
+
+.btn__btn {
+  @include resetBtn;
+  margin-bottom: rem(15);
+  padding: rem(5) rem(15);
+  background-color: $grey-light;
+  color: $white;
+  border-radius: rem(10);
+  width: auto;
+}

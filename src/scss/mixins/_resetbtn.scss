@@ -1,0 +1,35 @@
+@mixin resetBtn() {
+  color: black;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+
+  &:not(input) {
+    user-select: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    text-decoration: none;
+    color: black;
+  }
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
