@@ -1,0 +1,10 @@
+/* BASE PART */
+@import "base/reset";
+@import "base/variables";
+/* END BASE PART */
+/* COMPONENT PART */
+@import "components/home";
+/* END COMPONENT PART*/
+/* FUNCTION PART */
+@import "functions/pxtorem";
+/* END FUNCTION*/
