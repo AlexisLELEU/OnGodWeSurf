@@ -1,22 +1,24 @@
-body{
-  background: #afcad6;
+.blue-light {
+  background: $blue-light;
 }
 
-header{
-  padding: 50px 20px;
+.header {
+  padding: rem(50) rem(20);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  img{
-    border: 2px solid $white;
-    width: 50px;
-    height: 37px;
-    margin-bottom: 30px;
-  }
-  h1{
-    font-family: 'Lato';
-    font-size: rem(36);
-    color: $white;
-  }
+}
+
+.header__title {
+  font-family: 'Lato', "Helvetica Neue", sans-serif;
+  font-size: rem(36);
+  color: $white;
+}
+
+.header__logo {
+  border: rem(2) solid $white;
+  width: rem(50);
+  height: rem(37);
+  margin-bottom: rem(30);
 }
