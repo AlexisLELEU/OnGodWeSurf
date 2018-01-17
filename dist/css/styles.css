@@ -257,6 +257,8 @@ time, mark, audio, video {
 
 .cards {
   padding: 1.25em 0; }
+  .cards .cards--search {
+    padding: 0.625em 0; }
 
 .cards__position {
   display: flex;
@@ -264,6 +266,9 @@ time, mark, audio, video {
   align-items: center;
   justify-content: space-around;
   padding-bottom: 1.25em; }
+  .cards__position .cards__position--flex {
+    flex-flow: column wrap;
+    align-items: center; }
 
 .cards__image {
   width: 5em;
@@ -277,6 +282,10 @@ time, mark, audio, video {
 .cards-content {
   background-color: #FFF;
   padding: 0.625em 0.3125em; }
+  .cards-content .cards-content--margin {
+    margin-left: 0.625em;
+    margin-right: 0.625em;
+    margin-top: 1.5625em; }
 
 .about {
   display: flex;
@@ -284,21 +293,9 @@ time, mark, audio, video {
   justify-content: space-around;
   padding-bottom: 0.625em; }
 
-.cards--search {
-  padding: 0.625em 0; }
-
-.cards__position--flex {
-  flex-flow: column wrap;
-  align-items: center; }
-
 .cards__position__title {
   color: #FFF;
   font-family: "Lato", "Helvetica Neue", sans-serif; }
-
-.cards-content--margin {
-  margin-left: 0.625em;
-  margin-right: 0.625em;
-  margin-top: 1.5625em; }
 
 .contact {
   display: flex;
