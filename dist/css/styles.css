@@ -202,6 +202,13 @@ time, mark, audio, video {
   color: #FFF;
   font-size: 0.6875em; }
 
+.reset {
+  padding: 1.5em 2em;
+  text-align: center; }
+
+.reset__password {
+  color: #FFF; }
+
 .section-top {
   background: url("../img/notredame.jpg") center;
   height: 13.75em;
@@ -259,6 +266,19 @@ time, mark, audio, video {
   font-weight: 400;
   color: #FFF;
   font-family: 'lato'; }
+
+.page_info {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  margin-left: 40%;
+  text-align: center; }
+
+.page_name {
+  color: #FFF;
+  font-size: 1.5em;
+  font-weight: bold; }
 
 .cards {
   padding: 1.25em 0; }
