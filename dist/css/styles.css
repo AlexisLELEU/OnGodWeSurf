@@ -281,7 +281,9 @@ time, mark, audio, video {
 
 .cards-content {
   background-color: #FFF;
-  padding: 0.625em 0.3125em; }
+  padding: 0.625em 0.9375em;
+  font-family: 'lato';
+  font-weight: lighter; }
   .cards-content .cards-content--margin {
     margin-left: 0.625em;
     margin-right: 0.625em;
@@ -291,11 +293,35 @@ time, mark, audio, video {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  padding-bottom: 0.625em; }
+  padding-bottom: 0.3125em; }
+  .about.about--flex {
+    justify-content: start; }
+
+.about__city {
+  font-size: 0.75em;
+  margin-left: 1.25em; }
+
+.about__name {
+  font-size: 0.75em; }
 
 .cards__position__title {
   color: #FFF;
   font-family: "Lato", "Helvetica Neue", sans-serif; }
+
+.text {
+  font-size: 0.75em;
+  padding-bottom: 0.3125em; }
+
+.text__content__cat {
+  color: #B8D0DB;
+  font-weight: bold; }
+
+.place {
+  font-size: 0.75em; }
+
+.place__content__cat {
+  color: #B8D0DB;
+  font-weight: lighter; }
 
 .contact {
   display: flex;

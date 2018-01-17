@@ -30,7 +30,9 @@
 
 .cards-content {
   background-color: $white;
-  padding: rem(10) rem(5);
+  padding: rem(10) rem(15);
+  font-family: 'lato';
+  font-weight: lighter;
   .cards-content--margin {
     margin-left: rem(10);
     margin-right: rem(10);
@@ -42,12 +44,41 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  padding-bottom: rem(10);
+  padding-bottom: rem(5);
+  &.about--flex{
+    justify-content: start;
+  }
+}
+
+.about__city {
+  font-size: rem(12);
+  margin-left: rem(20);
+}
+.about__name{
+  font-size: rem(12);
 }
 
 .cards__position__title {
   color: $white;
   font-family: "Lato", "Helvetica Neue", sans-serif;
+}
+
+
+.text{
+  font-size: rem(12);
+  padding-bottom: rem(5);
+}
+.text__content__cat{
+  color: $blue-light;
+  font-weight: bold;
+}
+
+.place{
+  font-size: rem(12);
+}
+.place__content__cat{
+  color: $blue-light;
+  font-weight: lighter;
 }
 
 .contact {
