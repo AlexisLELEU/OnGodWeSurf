@@ -1,9 +1,9 @@
 .connect-main {
-  font-family: 'lato';
+  font-family: "Lato", "Helvetica Neue", sans-serif;
 }
 
 .title__title {
-  font-family: 'Lato';
+  font-family: "Lato", "Helvetica Neue", sans-serif;
   text-align: center;
   color: $white;
   font-size: rem(14);
@@ -53,4 +53,31 @@
   text-transform: uppercase;
   text-decoration: underline;
   padding: rem(30);
+}
+
+.profil-form__content{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: start;
+  padding: rem(20) 0 0 0;
+  &.profil-form__content--content{
+    justify-content: row;
+  }
+}
+
+.profil-form__content__label{
+  font-family: "Lato", "Helvetica Neue", sans-serif;
+  color: $blue-light;
+}
+
+.profil-form__content__input{
+  border: 1px solid $blue-light;
+  width: 80px;
+  margin: 0 rem(10) 0 rem(10);
+  border-radius: 5px;
+  &.profil-form__content__input--size{
+    width: 100%;
+    height: rem(50);
+  }
 }

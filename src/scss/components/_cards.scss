@@ -16,6 +16,10 @@
     align-items: center;
     padding: 0;
   }
+  &.cards__position--start{
+    align-items: start;
+
+  }
 }
 
 .cards__image {
@@ -32,7 +36,7 @@
 .cards-content {
   background-color: $white;
   padding: rem(10) rem(15);
-  font-family: 'lato';
+  font-family: "Lato", "Helvetica Neue", sans-serif;
   font-weight: lighter;
   justify-content: start;
   .cards-content--margin {
@@ -73,6 +77,9 @@
   &.cards__position__title--size{
     font-size: rem(30);
   }
+  &.cards__position__title--hebSize{
+    font-size: rem(20);
+  }
 }
 
 
@@ -82,6 +89,9 @@
   &.text--padding{
     padding: 0 rem(55);
     text-align: center;
+  }
+  &.text--padding{
+    padding: rem(10) rem(40);
   }
 }
 .text__content{
@@ -110,12 +120,16 @@
   padding-left: rem(10);
 }
 
-.contact__title,
-.contact__content {
-  color: $white;
-  font-size: rem(18);
+.contact{
+  padding: rem(10) rem(35);
 }
 
-.contact__title {
-  padding-right: rem(10);
+.contact__content{
+  font-weight: lighter;
+  font-family: "Lato", "Helvetica Neue", sans-serif;
+}
+
+.contact__content__title{
+  font-weight: normal;
+  color: $blue-light;
 }

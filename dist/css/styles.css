@@ -144,10 +144,10 @@ time, mark, audio, video {
   margin-bottom: 1.875em; }
 
 .connect-main {
-  font-family: 'lato'; }
+  font-family: "Lato", "Helvetica Neue", sans-serif; }
 
 .title__title {
-  font-family: 'Lato';
+  font-family: "Lato", "Helvetica Neue", sans-serif;
   text-align: center;
   color: #FFF;
   font-size: 0.875em;
@@ -194,6 +194,28 @@ time, mark, audio, video {
   text-transform: uppercase;
   text-decoration: underline;
   padding: 1.875em; }
+
+.profil-form__content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: start;
+  padding: 1.25em 0 0 0; }
+  .profil-form__content.profil-form__content--content {
+    justify-content: row; }
+
+.profil-form__content__label {
+  font-family: "Lato", "Helvetica Neue", sans-serif;
+  color: #B8D0DB; }
+
+.profil-form__content__input {
+  border: 1px solid #B8D0DB;
+  width: 80px;
+  margin: 0 0.625em 0 0.625em;
+  border-radius: 5px; }
+  .profil-form__content__input.profil-form__content__input--size {
+    width: 100%;
+    height: 3.125em; }
 
 .back {
   padding: 0em 1.875em; }
@@ -258,7 +280,7 @@ time, mark, audio, video {
   font-size: 1.125em;
   font-weight: 400;
   color: #FFF;
-  font-family: 'lato'; }
+  font-family: "Lato", "Helvetica Neue", sans-serif; }
 
 .cards {
   padding: 1.25em 0; }
@@ -275,6 +297,8 @@ time, mark, audio, video {
     flex-flow: column wrap;
     align-items: center;
     padding: 0; }
+  .cards__position.cards__position--start {
+    align-items: start; }
 
 .cards__image {
   width: 5em;
@@ -288,7 +312,7 @@ time, mark, audio, video {
 .cards-content {
   background-color: #FFF;
   padding: 0.625em 0.9375em;
-  font-family: 'lato';
+  font-family: "Lato", "Helvetica Neue", sans-serif;
   font-weight: lighter;
   justify-content: start; }
   .cards-content .cards-content--margin {
@@ -321,6 +345,8 @@ time, mark, audio, video {
     color: #B8D0DB; }
   .cards__position__title.cards__position__title--size {
     font-size: 1.875em; }
+  .cards__position__title.cards__position__title--hebSize {
+    font-size: 1.25em; }
 
 .text {
   font-size: 0.75em;
@@ -328,6 +354,8 @@ time, mark, audio, video {
   .text.text--padding {
     padding: 0 3.4375em;
     text-align: center; }
+  .text.text--padding {
+    padding: 0.625em 2.5em; }
 
 .text__content {
   font-size: 0.9375em; }
@@ -351,13 +379,16 @@ time, mark, audio, video {
   padding-bottom: 1.25em;
   padding-left: 0.625em; }
 
-.contact__title,
-.contact__content {
-  color: #FFF;
-  font-size: 1.125em; }
+.contact {
+  padding: 0.625em 2.1875em; }
 
-.contact__title {
-  padding-right: 0.625em; }
+.contact__content {
+  font-weight: lighter;
+  font-family: "Lato", "Helvetica Neue", sans-serif; }
+
+.contact__content__title {
+  font-weight: normal;
+  color: #B8D0DB; }
 
 /* END COMPONENT PART*/
 
