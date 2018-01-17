@@ -11,29 +11,10 @@ export default class Templating {
     /* PRIVATE METHODS */
 
     _createBounds() {
-        ['_getData', '_putData', '_prevent']
+        ['_prevent']
             .forEach((fn) => this[fn] = this[fn].bind(this));
     }
 
-    _putData() {
-        for (let i = 0; i < this._parsing.search.length; i++) {
-            let compiledTemplate = Handlebars.compile(this._dom.cardsTemplate);
-
-            let generated = compiledTemplate(this._parsing.search[i]);
-            this._dom.cardsContainer.innerHTML += generated
-        }
-    }
-
-    _getData() {
-        let arr = []
-        let req = new XMLHttpRequest();
-        req.open('GET', 'http://joibor.fr/api/search.json', false);
-        req.send(null);
-        if (req.status === 200) {
-            this._parsing = JSON.parse(req.responseText);
-            arr.push(this._parsing)
-        }
-    }
 
     _prevent(pEvt) {
 
@@ -61,7 +42,7 @@ export default class Templating {
                     cardsContainer.innerHTML += generated
                 }
             }
-        }else {
+        } else {
             cardsContainer.innerHTML = ''
         }
     }
