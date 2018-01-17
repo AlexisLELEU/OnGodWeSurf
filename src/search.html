@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="section-top">
+    <form class="form" action="">
+        <label class="form__label" for="">Lieux</label>
+        <input type="text" class="form__input" placeholder="...">
+    </form>
+</div>
+<section class="section-bottom">
+    <h2 class="section-bottom__title">Les membres qui se trouvent à Reims</h2>
+    <div class="section-bottom__template"></div>
+    <script id="cards-template" type="text/x-handlebars-template">
+        <div class="cards">
+            <div class="cards__position">
+                <img class="cards__image" src="{{image}}" alt="profil 1">
+                <div class="cards-content">
+                    <div class="about about--flex">
+                        <p class="about__name">{{name}}</p>
+                        <p class="about__city">{{city}}</p>
+                    </div>
+                    <div class="text">
+                        <p class="text__content"><span class="text__content__cat">Disponible : </span> {{start}} <span class="text__content__cat">au</span> {{end}}</p>
+                    </div>
+                    <div class="place">
+                        <p class="place__content"><span class="place__content__cat">Nombre max de voyageurs : </span> {{max}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+</section>
+<script src="js/script.js"></script>
+</body>
+</html>

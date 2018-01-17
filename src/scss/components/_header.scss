@@ -1,0 +1,25 @@
+.blue-light {
+  background: $blue-light;
+  height: 100vh;
+}
+
+.header {
+  padding: rem(40) rem(20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__title {
+  font-family: 'Lato', "Helvetica Neue", sans-serif;
+  font-size: rem(36);
+  color: $white;
+}
+
+.header__logo {
+  border: rem(2) solid $white;
+  width: rem(50);
+  height: rem(37);
+  margin-bottom: rem(30);
+}

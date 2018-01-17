@@ -22,7 +22,7 @@ var isProd = process.env.NODE_ENV === 'production';
  */
 
 function templates() {
-    return gulp.src('src/pages/**/*.html')
+    return gulp.src('src/**/*.html')
         .pipe(plumber())
         .pipe(pug())
         .pipe(gulp.dest('dist/'))
@@ -36,8 +36,7 @@ function templates() {
  */
 
 function scss() {
-    return gulp.src('src/scss/_styles.scss')
-        .pipe(plumber())
+    return gulp.src('src/scss/styles.scss')
         .pipe(gulpif(!isProd, sourcemaps.init()))
         .pipe(sass())
         .pipe(gulpif(isProd, minifyCSS()))
@@ -105,7 +104,7 @@ gulp.task('default', gulp.parallel(templates, scss, js, images, fonts, function 
         }
     });
 
-    gulp.watch('src/**/*.pug', templates);
+    gulp.watch('src/**/*.html', templates);
     gulp.watch('src/**/*.scss', scss);
     gulp.watch('src/**/*.js', js);
 

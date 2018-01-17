@@ -1,0 +1,7 @@
+@mixin button () {
+  background: $grey-light;
+  color: $white;
+  border-radius: rem(4);
+  width: rem(134);
+  padding: rem(10);
+}
