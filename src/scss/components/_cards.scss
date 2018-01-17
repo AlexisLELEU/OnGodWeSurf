@@ -1,5 +1,8 @@
 .cards {
   padding: rem(20) 0;
+  .cards--search {
+    padding: rem(10) 0;
+  }
 }
 
 .cards__position {
@@ -8,6 +11,10 @@
   align-items: center;
   justify-content: space-around;
   padding-bottom: rem(20);
+  .cards__position--flex {
+    flex-flow: column wrap;
+    align-items: center;
+  }
 }
 
 .cards__image {
@@ -24,6 +31,11 @@
 .cards-content {
   background-color: $white;
   padding: rem(10) rem(5);
+  .cards-content--margin {
+    margin-left: rem(10);
+    margin-right: rem(10);
+    margin-top: rem(25);
+  }
 }
 
 .about {
@@ -33,24 +45,9 @@
   padding-bottom: rem(10);
 }
 
-.cards--search {
-  padding: rem(10) 0;
-}
-
-.cards__position--flex {
-  flex-flow: column wrap;
-  align-items: center;
-}
-
 .cards__position__title {
   color: $white;
   font-family: "Lato", "Helvetica Neue", sans-serif;
-}
-
-.cards-content--margin {
-  margin-left: rem(10);
-  margin-right: rem(10);
-  margin-top: rem(25);
 }
 
 .contact {
