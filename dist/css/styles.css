@@ -65,10 +65,10 @@ time, mark, audio, video {
 .cta-inup {
   position: absolute;
   top: 1.25em;
-  right: 1.25em; }
+  width: 100%; }
   .cta-inup .btn {
     display: flex;
-    flex-flow: column wrap; }
+    justify-content: space-around; }
 
 .choice {
   position: absolute;
@@ -81,7 +81,7 @@ time, mark, audio, video {
   .choice .btn {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 0.9375em; }
     .choice .btn .btn__btn {
       padding: 0.5em 3.125em; }
@@ -220,10 +220,14 @@ time, mark, audio, video {
     right: 0;
     bottom: 0;
     background-color: rgba(184, 208, 219, 0.4); }
+  .section-top.section-top--height {
+    height: 9.375em; }
 
 .section-bottom {
   position: relative;
   background-color: #B8D0DB; }
+  .section-bottom.section-bottom--white {
+    background-color: #FFF !important; }
 
 .section-bottom__title {
   padding-top: 0.9375em;
@@ -253,12 +257,13 @@ time, mark, audio, video {
   padding-left: 0.9375em;
   font-size: 1.125em;
   font-weight: 400;
-  color: #FFF; }
+  color: #FFF;
+  font-family: 'lato'; }
 
 .cards {
   padding: 1.25em 0; }
-  .cards .cards--search {
-    padding: 0.625em 0; }
+  .cards.cards--search {
+    padding: 1.25em 0 0 0; }
 
 .cards__position {
   display: flex;
@@ -266,9 +271,10 @@ time, mark, audio, video {
   align-items: center;
   justify-content: space-around;
   padding-bottom: 1.25em; }
-  .cards__position .cards__position--flex {
+  .cards__position.cards__position--flex {
     flex-flow: column wrap;
-    align-items: center; }
+    align-items: center;
+    padding: 0; }
 
 .cards__image {
   width: 5em;
@@ -283,11 +289,14 @@ time, mark, audio, video {
   background-color: #FFF;
   padding: 0.625em 0.9375em;
   font-family: 'lato';
-  font-weight: lighter; }
+  font-weight: lighter;
+  justify-content: start; }
   .cards-content .cards-content--margin {
     margin-left: 0.625em;
     margin-right: 0.625em;
     margin-top: 1.5625em; }
+  .cards-content.cards-content--padding {
+    padding: 0.625em 2.1875em; }
 
 .about {
   display: flex;
@@ -306,11 +315,24 @@ time, mark, audio, video {
 
 .cards__position__title {
   color: #FFF;
-  font-family: "Lato", "Helvetica Neue", sans-serif; }
+  font-family: "Lato", "Helvetica Neue", sans-serif;
+  text-align: center; }
+  .cards__position__title.cards__position__title--blue {
+    color: #B8D0DB; }
+  .cards__position__title.cards__position__title--size {
+    font-size: 1.875em; }
 
 .text {
   font-size: 0.75em;
   padding-bottom: 0.3125em; }
+  .text.text--padding {
+    padding: 0 3.4375em;
+    text-align: center; }
+
+.text__content {
+  font-size: 0.9375em; }
+  .text__content.text__content--size {
+    font-size: 1.25em; }
 
 .text__content__cat {
   color: #B8D0DB;

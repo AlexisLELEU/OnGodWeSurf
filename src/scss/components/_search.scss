@@ -14,11 +14,17 @@
     @include absolute;
     background-color: rgba(184, 208, 219, 0.4);
   }
+  &.section-top--height{
+    height: rem(150);
+  }
 }
 
 .section-bottom {
   position: relative;
   background-color: $blue-light;
+  &.section-bottom--white{
+    background-color: $white !important;
+  }
 }
 
 .section-bottom__title {

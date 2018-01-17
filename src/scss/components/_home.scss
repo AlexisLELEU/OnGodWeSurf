@@ -28,10 +28,10 @@
 .cta-inup {
   position: absolute;
   top: rem(20);
-  right: rem(20);
+  width: 100%;
   .btn {
     display: flex;
-    flex-flow: column wrap;
+    justify-content:space-around;
   }
 }
 
@@ -47,7 +47,7 @@
   .btn {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: rem(15);
     .btn__btn {
       padding: rem(8) rem(50);

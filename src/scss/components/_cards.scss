@@ -1,7 +1,7 @@
 .cards {
   padding: rem(20) 0;
-  .cards--search {
-    padding: rem(10) 0;
+  &.cards--search {
+    padding: rem(20) 0 0 0;
   }
 }
 
@@ -11,9 +11,10 @@
   align-items: center;
   justify-content: space-around;
   padding-bottom: rem(20);
-  .cards__position--flex {
+  &.cards__position--flex {
     flex-flow: column wrap;
     align-items: center;
+    padding: 0;
   }
 }
 
@@ -33,10 +34,14 @@
   padding: rem(10) rem(15);
   font-family: 'lato';
   font-weight: lighter;
+  justify-content: start;
   .cards-content--margin {
     margin-left: rem(10);
     margin-right: rem(10);
     margin-top: rem(25);
+  }
+  &.cards-content--padding{
+    padding: rem(10) rem(35);
   }
 }
 
@@ -61,12 +66,29 @@
 .cards__position__title {
   color: $white;
   font-family: "Lato", "Helvetica Neue", sans-serif;
+  text-align: center ;
+  &.cards__position__title--blue{
+    color: $blue-light;
+  }
+  &.cards__position__title--size{
+    font-size: rem(30);
+  }
 }
 
 
 .text{
   font-size: rem(12);
   padding-bottom: rem(5);
+  &.text--padding{
+    padding: 0 rem(55);
+    text-align: center;
+  }
+}
+.text__content{
+  font-size: rem(15);
+  &.text__content--size{
+    font-size: rem(20);
+  }
 }
 .text__content__cat{
   color: $blue-light;
