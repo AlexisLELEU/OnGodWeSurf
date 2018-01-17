@@ -27,7 +27,6 @@ export default class Templating {
             let arr = [];
             let value = pEvt.target.value;
             arr.push(value);
-            console.log(arr)
             let req = new XMLHttpRequest();
             req.open('GET', 'http://joibor.fr/api/search.json', true);
             req.addEventListener('load', () => {
