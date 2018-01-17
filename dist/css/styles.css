@@ -138,9 +138,8 @@ time, mark, audio, video {
   color: #FFF; }
 
 .header__logo {
-  border: 0.125em solid #FFF;
-  width: 3.125em;
-  height: 2.3125em;
+  width: 6.25em;
+  height: 4.625em;
   margin-bottom: 1.875em; }
 
 .connect-main {
