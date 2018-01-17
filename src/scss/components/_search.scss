@@ -1,0 +1,31 @@
+.section-top {
+  background: url("../img/notredame.jpg") center;
+  height: rem(220);
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  .form {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+  }
+  &:after {
+    content: '';
+    @include absolute;
+    background-color: rgba(184, 208, 219, 0.4);
+  }
+}
+
+.section-bottom {
+  position: relative;
+  background-color: $blue-light;
+}
+
+.section-bottom__title {
+  padding-top: rem(15);
+  padding-bottom: rem(15);
+  padding-right: rem(30);
+  font-family: 'Lato', "Helvetica Neue", sans-serif;
+  color: $white;
+  text-align: right;
+}

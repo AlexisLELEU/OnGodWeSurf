@@ -1,10 +1,8 @@
-.connect-main{
+.connect-main {
   font-family: 'lato';
 }
 
-
-
-.title__title{
+.title__title {
   font-family: 'Lato';
   text-align: center;
   color: $white;
@@ -13,20 +11,20 @@
   text-transform: uppercase;
 }
 
-.form{
+.form {
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: rem(15) rem(30);
 }
 
-.form__label{
+.form__label {
   color: $white;
   font-size: rem(14);
   margin-bottom: rem(5);
 }
 
-.form__input{
+.form__input {
   background: $white;
   border-radius: rem(4);
   border: none;
@@ -34,21 +32,21 @@
   margin-bottom: rem(20);
 }
 
-.form__validate{
+.form__validate {
   @include button;
   margin: 0 auto;
 }
 
-.forget{
+.forget {
   padding: rem(0) rem(30);
 }
 
-.forget__link{
+.forget__link {
   color: $white;
   font-size: rem(11);
 }
 
-.create__link{
+.create__link {
   text-align: center;
   color: $white;
   font-size: rem(14);
