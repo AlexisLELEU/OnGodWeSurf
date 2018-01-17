@@ -37,5 +37,8 @@
   "bugs": {
     "url": "https://github.com/AlexisLELEU/OnGodWeSurf/issues"
   },
-  "homepage": "https://github.com/AlexisLELEU/OnGodWeSurf#readme"
+  "homepage": "https://github.com/AlexisLELEU/OnGodWeSurf#readme",
+  "dependencies": {
+    "handlebars": "^4.0.11"
+  }
 }
