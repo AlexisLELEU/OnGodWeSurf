@@ -106,7 +106,7 @@ time, mark, audio, video {
   -webkit-appearance: none;
   margin-bottom: 0.9375em;
   padding: 0.3125em 0.9375em;
-  background-color: #d3d3d3;
+  background-color: #d9d9d9;
   color: #FFF;
   border-radius: 0.625em;
   width: auto; }
@@ -122,7 +122,8 @@ time, mark, audio, video {
     padding: 0; }
 
 .blue-light {
-  background: #B8D0DB; }
+  background: #B8D0DB;
+  height: 100vh; }
 
 .header {
   padding: 2.5em 1.25em;
@@ -200,6 +201,118 @@ time, mark, audio, video {
 .back__link {
   color: #FFF;
   font-size: 0.6875em; }
+
+.section-top {
+  background: url("../img/notredame.jpg") center;
+  height: 13.75em;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center; }
+  .section-top .form {
+    position: relative;
+    z-index: 1;
+    width: 100%; }
+  .section-top:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(184, 208, 219, 0.4); }
+
+.section-bottom {
+  position: relative;
+  background-color: #B8D0DB; }
+
+.section-bottom__title {
+  padding-top: 0.9375em;
+  padding-bottom: 0.9375em;
+  padding-right: 1.875em;
+  font-family: 'Lato', "Helvetica Neue", sans-serif;
+  color: #FFF;
+  text-align: right; }
+
+.section-top--end {
+  align-items: flex-end; }
+
+.profil {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 1.875em;
+  padding-bottom: 1.25em; }
+
+.profil__photo {
+  width: 5em;
+  border-radius: 100%; }
+
+.profil__name {
+  width: 8.125em;
+  padding-left: 0.9375em;
+  font-size: 1.125em;
+  font-weight: 400;
+  color: #FFF; }
+
+.cards {
+  padding: 1.25em 0; }
+
+.cards__position {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 1.25em; }
+
+.cards__image {
+  width: 5em;
+  border-radius: 50%; }
+
+.cards-content,
+.text {
+  display: flex;
+  flex-flow: column wrap; }
+
+.cards-content {
+  background-color: #FFF;
+  padding: 0.625em 0.3125em; }
+
+.about {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-bottom: 0.625em; }
+
+.cards--search {
+  padding: 0.625em 0; }
+
+.cards__position--flex {
+  flex-flow: column wrap;
+  align-items: center; }
+
+.cards__position__title {
+  color: #FFF;
+  font-family: "Lato", "Helvetica Neue", sans-serif; }
+
+.cards-content--margin {
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+  margin-top: 1.5625em; }
+
+.contact {
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 1.25em;
+  padding-left: 0.625em; }
+
+.contact__title,
+.contact__content {
+  color: #FFF;
+  font-size: 1.125em; }
+
+.contact__title {
+  padding-right: 0.625em; }
 
 /* END COMPONENT PART*/
 
