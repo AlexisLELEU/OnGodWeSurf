@@ -5,33 +5,64 @@ export default class Templating {
     constructor() {
         this._grabDom();
         this._addListener();
-
-        this._getData();
-        this._putData();
     }
 
 
     /* PRIVATE METHODS */
 
     _createBounds() {
-        ['_getData', '_putData']
+        ['_getData', '_putData', '_prevent']
             .forEach((fn) => this[fn] = this[fn].bind(this));
     }
 
-    _putData () {
+    _putData() {
         for (let i = 0; i < this._parsing.search.length; i++) {
             let compiledTemplate = Handlebars.compile(this._dom.cardsTemplate);
+
             let generated = compiledTemplate(this._parsing.search[i]);
             this._dom.cardsContainer.innerHTML += generated
         }
     }
 
-    _getData () {
+    _getData() {
+        let arr = []
         let req = new XMLHttpRequest();
         req.open('GET', 'http://joibor.fr/api/search.json', false);
         req.send(null);
         if (req.status === 200) {
-            return this._parsing = JSON.parse(req.responseText);
+            this._parsing = JSON.parse(req.responseText);
+            arr.push(this._parsing)
+        }
+    }
+
+    _prevent(pEvt) {
+
+        let cardsTemplate = document.querySelector('#cards-template').innerHTML;
+        let cardsContainer = document.querySelector('.section-bottom__template');
+        let compiledTemplate = Handlebars.compile(cardsTemplate);
+
+        if (pEvt.keyCode === 13) {
+            pEvt.preventDefault();
+            let arr = [];
+            let value = pEvt.target.value;
+            arr.push(value);
+            console.log(arr)
+            let req = new XMLHttpRequest();
+            req.open('GET', 'http://joibor.fr/api/search.json', true);
+            req.addEventListener('load', () => {
+                if (req.status === 200 && req.readyState == 4) {
+                    this._parsing = JSON.parse(req.responseText);
+                }
+            });
+            req.send();
+            for (let i = 0; i < this._parsing.listing.length; i++) {
+                let generated = compiledTemplate(this._parsing.listing[i]);
+                if (arr[0].toLowerCase() === this._parsing.listing[i].city.toLowerCase()) {
+                    cardsContainer.innerHTML += generated
+                }
+            }
+        }else {
+            cardsContainer.innerHTML = ''
         }
     }
 
@@ -44,17 +75,18 @@ export default class Templating {
     /* EVENT HANDLER */
 
     _addListener() {
-
+        this._dom.searchInput.addEventListener('keypress', this._prevent)
     }
 
     /* END EVENT HANDLER */
 
     /* GRAB DOM */
 
-    _grabDom () {
+    _grabDom() {
         this._dom = {};
         this._dom.cardsTemplate = document.querySelector('#cards-template').innerHTML;
         this._dom.cardsContainer = document.querySelector('.section-bottom__template');
+        this._dom.searchInput = document.querySelector('.js-search-input');
     }
 
     /* END GRAB DOM*/
