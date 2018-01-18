@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/alexis/Desktop/HETIC COURS/hybrid_mobile/OnGodWeSurf/prod/apps/platforms/android/CordovaLib/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/alexis/Desktop/HETIC COURS/hybrid_mobile/OnGodWeSurf/prod/apps/platforms/android/CordovaLib/src/debug/jniLibs"/></dataSet></merger>

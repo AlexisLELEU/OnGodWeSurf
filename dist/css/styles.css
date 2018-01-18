@@ -53,6 +53,10 @@ time, mark, audio, video {
   width: 100%;
   height: 100%; }
 
+a {
+  text-decoration: none;
+  color: black; }
+
 .homepage__title {
   position: relative;
   z-index: 1;
@@ -61,6 +65,9 @@ time, mark, audio, video {
   font-size: 1.875em;
   padding: 0.3125em 1.25em;
   color: #FFF; }
+  .homepage__title.homepage__title--size {
+    font-size: 1.25em;
+    margin-top: 3.125em; }
 
 .cta-inup {
   position: absolute;
@@ -82,9 +89,13 @@ time, mark, audio, video {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin-top: 0.9375em; }
+    margin-top: 0.9375em;
+    padding: 0em 1.25em; }
     .choice .btn .btn__btn {
-      padding: 0.5em 3.125em; }
+      padding: 0.5em 3.125em;
+      background: #FFF;
+      color: #B8D0DB;
+      font-family: "Lato", "Helvetica Neue", sans-serif; }
 
 .btn__btn {
   color: black;
@@ -105,11 +116,15 @@ time, mark, audio, video {
   -moz-osx-font-smoothing: inherit;
   -webkit-appearance: none;
   margin-bottom: 0.9375em;
-  padding: 0.3125em 0.9375em;
+  padding: 0.625em 1.25em;
   background-color: #d9d9d9;
-  color: #FFF;
-  border-radius: 0.625em;
-  width: auto; }
+  border-radius: 0.3125em;
+  width: auto;
+  background: #FFF;
+  color: #B8D0DB;
+  font-family: "Lato", "Helvetica Neue", sans-serif;
+  position: relative;
+  z-index: 2; }
   .btn__btn:not(input) {
     user-select: none; }
   .btn__btn:focus {
@@ -126,6 +141,8 @@ time, mark, audio, video {
   height: 100vh; }
 
 .header {
+  position: relative;
+  z-index: 1;
   padding: 2.5em 1.25em;
   display: flex;
   justify-content: center;
@@ -141,6 +158,13 @@ time, mark, audio, video {
   width: 6.25em;
   height: 4.625em;
   margin-bottom: 1.875em; }
+
+.header__return {
+  position: absolute;
+  top: 0.625em;
+  left: 0.625em;
+  width: 1.875em;
+  z-index: 99; }
 
 .connect-main {
   font-family: "Lato", "Helvetica Neue", sans-serif; }
@@ -232,7 +256,7 @@ time, mark, audio, video {
 
 .section-top {
   background: url("../img/notredame.jpg") center;
-  height: 13.75em;
+  height: 11.875em;
   display: flex;
   flex-flow: row wrap;
   align-items: center; }
@@ -253,7 +277,8 @@ time, mark, audio, video {
 
 .section-bottom {
   position: relative;
-  background-color: #B8D0DB; }
+  background-color: #B8D0DB;
+  height: 100vh; }
   .section-bottom.section-bottom--white {
     background-color: #FFF !important; }
 
@@ -299,7 +324,20 @@ time, mark, audio, video {
 .page_name {
   color: #FFF;
   font-size: 1.5em;
-  font-weight: bold; }
+  font-weight: normal;
+  font-family: "Lato", "Helvetica Neue", sans-serif; }
+
+.to-profil {
+  z-index: 1;
+  width: 3.75em;
+  height: 3.75em;
+  position: absolute;
+  top: 0.625em;
+  right: 0.625em; }
+
+.to-profil__img {
+  width: 100%;
+  height: 100%; }
 
 .cards {
   padding: 1.25em 0; }
@@ -396,9 +434,7 @@ time, mark, audio, video {
   display: flex;
   flex-flow: row wrap;
   padding-bottom: 1.25em;
-  padding-left: 0.625em; }
-
-.contact {
+  padding-left: 0.625em;
   padding: 0.625em 2.1875em; }
 
 .contact__content {

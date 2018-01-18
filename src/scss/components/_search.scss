@@ -1,6 +1,6 @@
 .section-top {
   background: url("../img/notredame.jpg") center;
-  height: rem(220);
+  height: rem(190);
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -22,6 +22,7 @@
 .section-bottom {
   position: relative;
   background-color: $blue-light;
+  height: 100vh;
   &.section-bottom--white{
     background-color: $white !important;
   }

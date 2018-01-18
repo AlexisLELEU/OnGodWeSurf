@@ -4,6 +4,8 @@
 }
 
 .header {
+  position: relative;
+  z-index: 1;
   padding: rem(40) rem(20);
   display: flex;
   justify-content: center;
@@ -21,4 +23,15 @@
   width: rem(100);
   height: rem(74);
   margin-bottom: rem(30);
+}
+
+.page__return{
+
+}
+.header__return{
+  position: absolute;
+  top: rem(10);
+  left: rem(10);
+  width: rem(30);
+  z-index: 99;
 }
